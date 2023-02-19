@@ -5,12 +5,14 @@ import App from './App'
 import './index.scss'
 import { store } from './store/store';
 import { Payment } from './Payment';
+import { Yape } from './Yape';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      {/* <App /> */}
       {/* <Payment /> */}
+      <Yape/>
     </Provider>
   </React.StrictMode>,
 )
